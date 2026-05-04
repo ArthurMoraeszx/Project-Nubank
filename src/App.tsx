@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar"
 import Hero from "./components/hero"
+import Carousel from "./components/carousel"
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
           <Navbar/>
           <main>
             <Hero/>
+            <Carousel/>
           </main>
         </div>
     </div>
