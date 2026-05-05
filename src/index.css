@@ -287,3 +287,113 @@
   line-height: 1.4;
   margin-top:35px;
 }
+
+.card-feature-section {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #f5f5f5;
+  display: grid;
+  place-items: center; /* Centraliza o grid inteiro na seção */
+  padding: 80px 5%;
+}
+
+/* --- Seção Card Feature com Grid --- */
+.card-feature-section {
+  width: 100%;
+  min-height: 80vh;
+  background-color: #f5f5f5;
+  display: grid;
+  place-items: center; /* Centraliza o grid inteiro na seção */
+  padding: 80px 5%;
+}
+
+.card-feature-grid {
+  display: grid;
+  /* Cria duas colunas de tamanhos iguais */
+  grid-template-columns: 1fr 1fr; 
+  width: 100%;
+  max-width: 1100px;
+  gap: 40px;
+  align-items: center; /* Alinha verticalmente o texto com o card branco */
+}
+
+/* Coluna de Texto */
+.card-text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.card-text-column h2 {
+  font-size: 45px;
+  font-weight: 450;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #000;
+}
+
+.card-text-column p {
+  font-size: 22px;
+  line-height: 1.4;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #000;
+}
+
+.btn-conheca {
+  width: fit-content; /* Garante que o botão não estique */
+  background-color: var(--nu-purple);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  border: none;
+  padding: 16px 32px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-conheca:hover {
+  background-color: var(--nu-dark-purple);
+}
+
+/* Coluna da Imagem */
+.card-image-column {
+  display: flex;
+  justify-content: flex-end; /* Empurra o card branco para a direita */
+}
+
+.white-card-bg {
+  width: 100%;
+  max-width: 500px;
+  height: 550px;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* Sombra leve para dar profundidade ao card branco sobre o fundo cinza */
+  box-shadow: 0 4px 20px rgba(0,0,0,0.03); 
+}
+
+.white-card-bg img {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsividade Básica: Se a tela for pequena, vira uma coluna só */
+@media (max-width: 900px) {
+  .card-feature-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .card-text-column {
+    align-items: center;
+    text-align: center;
+  }
+  .card-image-column {
+    justify-content: center;
+  }
+}
