@@ -288,15 +288,6 @@
   margin-top:35px;
 }
 
-.card-feature-section {
-  width: 100%;
-  min-height: 80vh;
-  background-color: #f5f5f5;
-  display: grid;
-  place-items: center; /* Centraliza o grid inteiro na seção */
-  padding: 80px 5%;
-}
-
 /* --- Seção Card Feature com Grid --- */
 .card-feature-section {
   width: 100%;
@@ -304,7 +295,7 @@
   background-color: #f5f5f5;
   display: grid;
   place-items: center; /* Centraliza o grid inteiro na seção */
-  padding: 80px 5%;
+  padding: 100px 5%;
 }
 
 .card-feature-grid {
